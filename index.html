@@ -395,51 +395,54 @@
     </div>
 
   </div>
-</section>
-  <section id="umrah">
-    <h2 data-key="section-umrah">Умра</h2>
-    <div class="cards">
-      <div class="card">
-        <h3 data-key="umrah-standard">Стандарт</h3>
-        <div class="city" data-key="city">Город: Москва</div>
-        <div>10 – 23 февраля 2026 г.</div>
-        <div class="details">
-          <p><strong>Питание:</strong> Завтраки</p>
-          <p><strong>Гостиница:</strong> 3 звезды</p>
-          <p><strong>До мечети Аль-Харам:</strong> 3 км</p>
-        </div>
-        <div class="price" data-key="umrah-standard-price">ОТ 25 000 ₽</div>
-        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-      </div>
+<section id="umrah">
+  <h2 data-key="section-umrah">Умра</h2>
+  <div class="cards">
 
-      <div class="card">
-        <h3 data-key="umrah-plus">Стандарт Плюс</h3>
-        <div class="city" data-key="city">Город: Москва</div>
-        <div>15 – 28 марта 2026 г.</div>
-        <div class="details">
-          <p><strong>Питание:</strong> Полупансион (завтрак + ужин)</p>
-          <p><strong>Гостиница:</strong> 4 звезды</p>
-          <p><strong>До мечети Аль-Харам:</strong> 1,5 км</p>
-        </div>
-        <div class="price" data-key="umrah-plus-price">ОТ 50 000 ₽</div>
-        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+    <!-- Стандарт -->
+    <div class="card">
+      <h3 data-key="umrah-standard">Стандарт</h3>
+      <div class="city" data-key="city">Город: Москва</div>
+      <div data-key="umrah-dates-standard">10 – 23 февраля 2026 г.</div>
+      <div class="details">
+        <p data-key="meals-breakfast">Питание: Завтраки</p>
+        <p data-key="hotel-3">Гостиница: 3 звезды</p>
+        <p data-key="distance-3km">До мечети Аль-Харам: 3 км</p>
       </div>
-
-      <div class="card">
-        <h3 data-key="umrah-premium">Премиум</h3>
-        <div class="city" data-key="city">Город: Москва</div>
-        <div>20 июня – 3 июля 2026 г.</div>
-        <div class="details">
-          <p><strong>Питание:</strong> Полный пансион (трёхразовое)</p>
-          <p><strong>Гостиница:</strong> 5 звезд</p>
-          <p><strong>До мечети Аль-Харам:</strong> 1-я линия (вид на мечеть)</p>
-        </div>
-        <div class="price" data-key="umrah-premium-price">ОТ 75 000 ₽</div>
-        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-      </div>
+      <div class="price" data-key="umrah-standard-price">ОТ 25 000 ₽</div>
+      <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
     </div>
-  </section>
 
+    <!-- Стандарт Плюс -->
+    <div class="card">
+      <h3 data-key="umrah-plus">Стандарт Плюс</h3>
+      <div class="city" data-key="city">Город: Москва</div>
+      <div data-key="umrah-dates-plus">15 – 28 марта 2026 г.</div>
+      <div class="details">
+        <p data-key="meals-half-board">Питание: Полупансион (завтрак + ужин)</p>
+        <p data-key="hotel-4">Гостиница: 4 звезды</p>
+        <p data-key="distance-1.5km">До мечети Аль-Харам: 1,5 км</p>
+      </div>
+      <div class="price" data-key="umrah-plus-price">ОТ 50 000 ₽</div>
+      <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+    </div>
+
+    <!-- Премиум -->
+    <div class="card">
+      <h3 data-key="umrah-premium">Премиум</h3>
+      <div class="city" data-key="city">Город: Москва</div>
+      <div data-key="umrah-dates-premium">20 июня – 3 июля 2026 г.</div>
+      <div class="details">
+        <p data-key="meals-full-board">Питание: Полный пансион (трёхразовое)</p>
+        <p data-key="hotel-5">Гостиница: 5 звезд</p>
+        <p data-key="distance-1line">До мечети Аль-Харам: 1-я линия (вид на мечеть)</p>
+      </div>
+      <div class="price" data-key="umrah-premium-price">ОТ 75 000 ₽</div>
+      <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+    </div>
+
+  </div>
+</section>
   <section id="form-section">
     <h2 data-key="form-title">Оставить заявку</h2>
 
@@ -501,92 +504,108 @@
 // Переводы
 const translations = {
   ru: {
-    "logo":                 "Агент по Хаджу и Умре",
-    "menu-hajj":            "Совершить Хадж",
-    "menu-umrah":           "Совершить Умру",
-    "menu-offer":           "Публичная оферта",
-    "hero-title":           "Организуем вашу поездку на Хадж или Умру",
-    "hero-text":            "Оставьте заявку прямо сейчас — мы подберём оптимальный вариант поездки с учётом ваших пожеланий и бюджета.",
-    "hero-cta":             "Выбрать пакет",
-    "section-hajj":         "Хадж",
-    "section-umrah":        "Умра",
-    "hajj-standard":        "Стандарт",
-    "hajj-plus":            "Стандарт Плюс",
-    "hajj-premium":         "Премиум",
-    "hajj-standard-price":  "от 50 000 ₽",
-    "hajj-plus-price":      "от 100 000 ₽",
-    "hajj-premium-price":   "от 150 000 ₽",
-    "umrah-standard":       "Стандарт",
-    "umrah-plus":           "Стандарт Плюс",
-    "umrah-premium":        "Премиум",
+    "logo": "Агент по Хаджу и Умре",
+    "menu-hajj": "Совершить Хадж",
+    "menu-umrah": "Совершить Умру",
+    "menu-offer": "Публичная оферта",
+    "hero-title": "Организуем вашу поездку на Хадж или Умру",
+    "hero-text": "Оставьте заявку прямо сейчас — мы подберём оптимальный вариант поездки с учётом ваших пожеланий и бюджета.",
+    "hero-cta": "Выбрать пакет",
+    "section-hajj": "Хадж",
+    "section-umrah": "Умра",
+    "hajj-standard": "Стандарт",
+    "hajj-plus": "Стандарт Плюс",
+    "hajj-premium": "Премиум",
+    "hajj-standard-price": "от 50 000 ₽",
+    "hajj-plus-price": "от 100 000 ₽",
+    "hajj-premium-price": "от 150 000 ₽",
+    "umrah-standard": "Стандарт",
+    "umrah-plus": "Стандарт Плюс",
+    "umrah-premium": "Премиум",
     "umrah-standard-price": "от 25 000 ₽",
-    "umrah-plus-price":     "от 50 000 ₽",
-    "umrah-premium-price":  "от 75 000 ₽",
-    "city":                 "Город вылета: Москва",
-    "btn-submit":           "Оставить заявку",
-    "form-title":           "Оставить заявку",
-    "agreement":            "Нажимая кнопку «Отправить», я даю согласие на обработку персональных данных.",
-    "btn-send":             "Отправить",
-    "success":              "Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.",
-    "offer-title":          "Публичная оферта"
+    "umrah-plus-price": "от 50 000 ₽",
+    "umrah-premium-price": "от 75 000 ₽",
+    "city": "Город вылета: Москва",
+    "btn-submit": "Оставить заявку",
+    "form-title": "Оставить заявку",
+    "agreement": "Нажимая кнопку «Отправить», я даю согласие на обработку персональных данных.",
+    "btn-send": "Отправить",
+    "success": "Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.",
+    "offer-title": "Публичная оферта",
+
+    // Ключи для карточек туров
+    "hajj-dates": "29 мая – 11 июня 2026 г.",
+    "umrah-dates-standard": "10 – 23 февраля 2026 г.",
+    "umrah-dates-plus": "15 – 28 марта 2026 г.",
+    "umrah-dates-premium": "20 июня – 3 июля 2026 г.",
+    "meals-breakfast": "Питание: Завтраки",
+    "meals-half-board": "Питание: Полупансион (завтрак + ужин)",
+    "meals-full-board": "Питание: Полный пансион (трёхразовое)",
+    "hotel-3": "Гостиница: 3 звезды",
+    "hotel-4": "Гостиница: 4 звезды",
+    "hotel-5": "Гостиница: 5 звезд",
+    "distance-3km": "До мечети Аль-Харам: 3 км",
+    "distance-1.5km": "До мечети Аль-Харам: 1,5 км",
+    "distance-1line": "До мечети Аль-Харам: 1-я линия (вид на мечеть)"
   },
 
   en: {
-    "logo":                 "Hajj & Umrah Travel Agent",
-    "menu-hajj":            "Hajj Packages",
-    "menu-umrah":           "Umrah Packages",
-    "menu-offer":           "Public Offer",
-    "hero-title":           "We Organize Your Hajj & Umrah Journey",
-    "hero-text":            "Submit your request now — we will select the best pilgrimage package tailored to your preferences and budget.",
-    "hero-cta":             "View Packages",
-    "section-hajj":         "Hajj",
-    "section-umrah":        "Umrah",
-    "hajj-standard":        "Standard",
-    "hajj-plus":            "Standard Plus",
-    "hajj-premium":         "Premium",
-    "hajj-standard-price":  "from 50,000 RUB",
-    "hajj-plus-price":      "from 100,000 RUB",
-    "hajj-premium-price":   "from 150,000 RUB",
-    "umrah-standard":       "Standard",
-    "umrah-plus":           "Standard Plus",
-    "umrah-premium":        "Premium",
+    "logo": "Hajj & Umrah Travel Agent",
+    "menu-hajj": "Hajj Packages",
+    "menu-umrah": "Umrah Packages",
+    "menu-offer": "Public Offer",
+    "hero-title": "We Organize Your Hajj & Umrah Journey",
+    "hero-text": "Submit your request now — we will select the best pilgrimage package tailored to your preferences and budget.",
+    "hero-cta": "View Packages",
+    "section-hajj": "Hajj",
+    "section-umrah": "Umrah",
+    "hajj-standard": "Standard",
+    "hajj-plus": "Standard Plus",
+    "hajj-premium": "Premium",
+    "hajj-standard-price": "from 50,000 RUB",
+    "hajj-plus-price": "from 100,000 RUB",
+    "hajj-premium-price": "from 150,000 RUB",
+    "umrah-standard": "Standard",
+    "umrah-plus": "Standard Plus",
+    "umrah-premium": "Premium",
     "umrah-standard-price": "from 25,000 RUB",
-    "umrah-plus-price":     "from 50,000 RUB",
-    "umrah-premium-price":  "from 75,000 RUB",
-    "city":                 "Departure city: Moscow",
-    "btn-submit":           "Send Request",
-    "form-title":           "Send Your Request",
-    "agreement":            "By clicking “Submit”, I consent to the processing of my personal data.",
-    "btn-send":             "Submit",
-    "success":              "Thank you! Your request has been received. We will contact you shortly.",
-    "offer-title":          "Public Offer"
-      
-  // ... существующие ключи ...
+    "umrah-plus-price": "from 50,000 RUB",
+    "umrah-premium-price": "from 75,000 RUB",
+    "city": "Departure city: Moscow",
+    "btn-submit": "Send Request",
+    "form-title": "Send Your Request",
+    "agreement": "By clicking “Submit”, I consent to the processing of my personal data.",
+    "btn-send": "Submit",
+    "success": "Thank you! Your request has been received. We will contact you shortly.",
+    "offer-title": "Public Offer",
 
-  "hajj-dates": "May 29 – June 11, 2026",
-
-  "meals-breakfast":      "Meals: Breakfast",
-  "meals-half-board":     "Meals: Half board (breakfast + dinner)",
-  "meals-full-board":     "Meals: Full board (three meals)",
-
-  "hotel-3":              "Hotel: 3 stars",
-  "hotel-4":              "Hotel: 4 stars",
-  "hotel-5":              "Hotel: 5 stars",
-
-  "distance-3km":         "To Al-Haram Mosque: 3 km",
-  "distance-1.5km":       "To Al-Haram Mosque: 1.5 km",
-  "distance-1line":       "To Al-Haram Mosque: 1st line (view of the mosque)"
-}
+    // Ключи для карточек туров
+    "hajj-dates": "May 29 – June 11, 2026",
+    "umrah-dates-standard": "February 10 – 23, 2026",
+    "umrah-dates-plus": "March 15 – 28, 2026",
+    "umrah-dates-premium": "June 20 – July 3, 2026",
+    "meals-breakfast": "Meals: Breakfast",
+    "meals-half-board": "Meals: Half board (breakfast + dinner)",
+    "meals-full-board": "Meals: Full board (three meals)",
+    "hotel-3": "Hotel: 3 stars",
+    "hotel-4": "Hotel: 4 stars",
+    "hotel-5": "Hotel: 5 stars",
+    "distance-3km": "To Masjid al-Haram: 3 km",
+    "distance-1.5km": "To Masjid al-Haram: 1.5 km",
+    "distance-1line": "To Masjid al-Haram: 1st line (view of the mosque)"
   }
 };
 
+// Функция переключения языка (без изменений, она уже правильная)
 function setLanguage(lang) {
   document.documentElement.lang = lang;
   document.documentElement.dataset.lang = lang;
 
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.dataset.key;
-    if (translations[lang][key]) el.textContent = translations[lang][key];
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
   });
 
   document.querySelectorAll('input[data-ph]').forEach(inp => {
