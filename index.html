@@ -348,50 +348,54 @@
     <a href="#hajj" class="btn" data-key="hero-cta">Выбрать тур</a>
   </section>
 
-  <section id="hajj">
-    <h2 data-key="section-hajj">Хадж</h2>
-    <div class="cards">
-      <div class="card">
-        <h3 data-key="hajj-standard">Стандарт</h3>
-        <div class="city" data-key="city">Город: Москва</div>
-        <div>29 мая – 11 июня 2026 г.</div>
-        <div class="details">
-          <p><strong>Питание:</strong> Завтраки</p>
-          <p><strong>Гостиница:</strong> 3 звезды</p>
-          <p><strong>До мечети Аль-Харам:</strong> 3 км</p>
-        </div>
-        <div class="price" data-key="hajj-standard-price">ОТ 50 000 ₽</div>
-        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-      </div>
+<section id="hajj">
+  <h2 data-key="section-hajj">Хадж</h2>
+  <div class="cards">
 
-      <div class="card">
-        <h3 data-key="hajj-plus">Стандарт Плюс</h3>
-        <div class="city" data-key="city">Город: Москва</div>
-        <div>29 мая – 11 июня 2026 г.</div>
-        <div class="details">
-          <p><strong>Питание:</strong> Полупансион (завтрак + ужин)</p>
-          <p><strong>Гостиница:</strong> 4 звезды</p>
-          <p><strong>До мечети Аль-Харам:</strong> 1,5 км</p>
-        </div>
-        <div class="price" data-key="hajj-plus-price">ОТ 100 000 ₽</div>
-        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+    <!-- Стандарт -->
+    <div class="card">
+      <h3 data-key="hajj-standard">Стандарт</h3>
+      <div class="city" data-key="city">Город: Москва</div>
+      <div data-key="hajj-dates">29 мая – 11 июня 2026 г.</div>
+      <div class="details">
+        <p data-key="meals-breakfast">Питание: Завтраки</p>
+        <p data-key="hotel-3">Гостиница: 3 звезды</p>
+        <p data-key="distance-3km">До мечети Аль-Харам: 3 км</p>
       </div>
-
-      <div class="card">
-        <h3 data-key="hajj-premium">Премиум</h3>
-        <div class="city" data-key="city">Город: Москва</div>
-        <div>29 мая – 11 июня 2026 г.</div>
-        <div class="details">
-          <p><strong>Питание:</strong> Полный пансион (трёхразовое)</p>
-          <p><strong>Гостиница:</strong> 5 звезд</p>
-          <p><strong>До мечети Аль-Харам:</strong> 1-я линия (вид на мечеть)</p>
-        </div>
-        <div class="price" data-key="hajj-premium-price">ОТ 150 000 ₽</div>
-        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-      </div>
+      <div class="price" data-key="hajj-standard-price">ОТ 50 000 ₽</div>
+      <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
     </div>
-  </section>
 
+    <!-- Стандарт Плюс -->
+    <div class="card">
+      <h3 data-key="hajj-plus">Стандарт Плюс</h3>
+      <div class="city" data-key="city">Город: Москва</div>
+      <div data-key="hajj-dates">29 мая – 11 июня 2026 г.</div>
+      <div class="details">
+        <p data-key="meals-half-board">Питание: Полупансион (завтрак + ужин)</p>
+        <p data-key="hotel-4">Гостиница: 4 звезды</p>
+        <p data-key="distance-1.5km">До мечети Аль-Харам: 1,5 км</p>
+      </div>
+      <div class="price" data-key="hajj-plus-price">ОТ 100 000 ₽</div>
+      <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+    </div>
+
+    <!-- Премиум -->
+    <div class="card">
+      <h3 data-key="hajj-premium">Премиум</h3>
+      <div class="city" data-key="city">Город: Москва</div>
+      <div data-key="hajj-dates">29 мая – 11 июня 2026 г.</div>
+      <div class="details">
+        <p data-key="meals-full-board">Питание: Полный пансион (трёхразовое)</p>
+        <p data-key="hotel-5">Гостиница: 5 звезд</p>
+        <p data-key="distance-1line">До мечети Аль-Харам: 1-я линия (вид на мечеть)</p>
+      </div>
+      <div class="price" data-key="hajj-premium-price">ОТ 150 000 ₽</div>
+      <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+    </div>
+
+  </div>
+</section>
   <section id="umrah">
     <h2 data-key="section-umrah">Умра</h2>
     <div class="cards">
@@ -556,6 +560,23 @@ const translations = {
     "btn-send":             "Submit",
     "success":              "Thank you! Your request has been received. We will contact you shortly.",
     "offer-title":          "Public Offer"
+      
+  // ... существующие ключи ...
+
+  "hajj-dates": "May 29 – June 11, 2026",
+
+  "meals-breakfast":      "Meals: Breakfast",
+  "meals-half-board":     "Meals: Half board (breakfast + dinner)",
+  "meals-full-board":     "Meals: Full board (three meals)",
+
+  "hotel-3":              "Hotel: 3 stars",
+  "hotel-4":              "Hotel: 4 stars",
+  "hotel-5":              "Hotel: 5 stars",
+
+  "distance-3km":         "To Al-Haram Mosque: 3 km",
+  "distance-1.5km":       "To Al-Haram Mosque: 1.5 km",
+  "distance-1line":       "To Al-Haram Mosque: 1st line (view of the mosque)"
+}
   }
 };
 
