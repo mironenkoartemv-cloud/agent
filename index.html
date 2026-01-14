@@ -246,23 +246,28 @@
     }
 
     .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.65);
-      display: none;
-      place-items: center;
-      z-index: 2000;
-      padding: 24px;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;                    /* небольшой запас по краям на мобильных */
+  overflow: hidden;
     }
 
     .modal-content {
-      background: white;
-      max-width: 760px;
-      max-height: 90vh;
-      overflow-y: auto;
-      border-radius: 16px;
-      padding: 40px;
-      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+   background: white;
+  width: 100%;
+  max-width: 760px;                 /* или 800px, если хотите чуть шире */
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  margin: 0 auto;                   /* дополнительное центрирование */
+  position: relative;
     }
 
     .modal h2 { margin-bottom: 1.6rem; color: var(--color-primary); }
