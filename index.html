@@ -11,20 +11,16 @@
       --color-surface:   #f8f9fa;
       --color-text:      #1f2937;
       --color-text-light:#4b5563;
-      --color-primary:   #1e3a8a;         /* глубокий индиго */
+      --color-primary:   #1e3a8a;
       --color-primary-d: #172554;
-      --color-accent:    #d4af37;         /* золото */
+      --color-accent:    #d4af37;
       --color-border:    #e2e8f0;
       --color-shadow:    0 10px 25px rgba(30,58,138, 0.08);
       --radius:          12px;
       --transition:      all 0.25s ease;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; }
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -34,9 +30,9 @@
     }
 
     .container {
-      max-width: 1180px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 20px;
     }
 
     header {
@@ -60,7 +56,6 @@
       font-size: 1.45rem;
       font-weight: 700;
       color: var(--color-primary);
-      letter-spacing: -0.02em;
     }
 
     nav ul {
@@ -76,9 +71,7 @@
       transition: var(--transition);
     }
 
-    nav a:hover {
-      color: var(--color-primary);
-    }
+    nav a:hover { color: var(--color-primary); }
 
     .lang-switch button {
       background: none;
@@ -144,9 +137,7 @@
       transform: translateY(-2px);
     }
 
-    section {
-      padding: 100px 0;
-    }
+    section { padding: 100px 0; }
 
     h2 {
       text-align: center;
@@ -157,71 +148,63 @@
     }
 
     .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
-  justify-items: center;               /* центрирует, если карточек меньше */
-}
-
-.card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: 32px 24px;                  /* чуть меньше внутренние отступы */
-  text-align: center;
-  transition: var(--transition);
-  box-shadow: var(--color-shadow);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(30,58,138, 0.12);
-}
-
-.card h3 {
-  font-size: 1.55rem;
-  margin-bottom: 0.9rem;
-  color: var(--color-primary);
-}
-
-.card .city {
-  color: var(--color-text-light);
-  margin-bottom: 0.6rem;
-  font-size: 1rem;
-}
-
-.card .details {
-  margin: 1.1rem 0;
-  font-size: 0.94rem;
-  line-height: 1.5;
-  color: var(--color-text-light);
-  text-align: left;
-}
-
-.card .details p {
-  margin: 0.4rem 0;
-}
-
-.card .details strong {
-  color: var(--color-primary);
-}
-
-.card .price {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  margin: 1.3rem 0 1.5rem;
-}
-
-.card a.btn {
-  margin-top: auto;                    /* кнопка прижимается к низу */
-}
-    #form-section {
-      background: var(--color-surface);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
     }
+
+    .card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+      transition: var(--transition);
+      box-shadow: var(--color-shadow);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(30,58,138, 0.12);
+    }
+
+    .card h3 {
+      font-size: 1.55rem;
+      margin-bottom: 0.9rem;
+      color: var(--color-primary);
+    }
+
+    .card .city {
+      color: var(--color-text-light);
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+    }
+
+    .card .details {
+      margin: 1.1rem 0;
+      font-size: 0.94rem;
+      line-height: 1.5;
+      color: var(--color-text-light);
+      text-align: left;
+    }
+
+    .card .details p { margin: 0.4rem 0; }
+
+    .card .details strong { color: var(--color-primary); }
+
+    .card .price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      margin: 1.3rem 0 1.5rem;
+    }
+
+    .card a.btn { margin-top: auto; }
+
+    #form-section { background: var(--color-surface); }
 
     form {
       max-width: 640px;
@@ -282,10 +265,7 @@
       box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
     }
 
-    .modal h2 {
-      margin-bottom: 1.6rem;
-      color: var(--color-primary);
-    }
+    .modal h2 { margin-bottom: 1.6rem; color: var(--color-primary); }
 
     .close {
       float: right;
@@ -296,9 +276,7 @@
       transition: var(--transition);
     }
 
-    .close:hover {
-      color: var(--color-primary);
-    }
+    .close:hover { color: var(--color-primary); }
 
     .offer-text {
       display: block;
@@ -307,17 +285,17 @@
       color: var(--color-text);
     }
 
-    .offer-text strong {
-      color: var(--color-primary);
-    }
+    .offer-text strong { color: var(--color-primary); }
 
     .offer-text ol {
       margin: 1.6rem 0 1.6rem 1.8rem;
       padding-left: 0;
     }
 
-    .offer-text li {
-      margin-bottom: 1.3rem;
+    .offer-text li { margin-bottom: 1.3rem; }
+
+    @media (max-width: 1023px) {
+      .cards { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
     }
 
     @media (max-width: 768px) {
@@ -338,8 +316,8 @@
 
       <nav>
         <ul>
-          <li><a href="#hajj"   data-key="menu-hajj">Совершить Хадж</a></li>
-          <li><a href="#umrah"  data-key="menu-umrah">Совершить Умру</a></li>
+          <li><a href="#hajj" data-key="menu-hajj">Совершить Хадж</a></li>
+          <li><a href="#umrah" data-key="menu-umrah">Совершить Умру</a></li>
           <li><a href="#" id="open-offer" data-key="menu-offer">Публичная оферта</a></li>
         </ul>
       </nav>
@@ -366,95 +344,101 @@
   </section>
 
   <section id="hajj">
-    <div class="card">
-  <h3 data-key="hajj-standard">Стандарт</h3>
-  <div class="city" data-key="city">Город: Москва</div>
-  <div>29 мая – 11 июня 2026 г.</div>
-  <div class="details">
-    <p><strong>Питание:</strong> Завтраки</p>
-    <p><strong>Гостиница:</strong> 3 звезды</p>
-    <p><strong>До мечети Аль-Харам:</strong> 3 км</p>
-  </div>
-  <div class="price" data-key="hajj-standard-price">ОТ 50 000 ₽</div>
-  <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-</div>
+    <h2 data-key="section-hajj">Хадж</h2>
+    <div class="cards">
+      <div class="card">
+        <h3 data-key="hajj-standard">Стандарт</h3>
+        <div class="city" data-key="city">Город: Москва</div>
+        <div>29 мая – 11 июня 2026 г.</div>
+        <div class="details">
+          <p><strong>Питание:</strong> Завтраки</p>
+          <p><strong>Гостиница:</strong> 3 звезды</p>
+          <p><strong>До мечети Аль-Харам:</strong> 3 км</p>
+        </div>
+        <div class="price" data-key="hajj-standard-price">ОТ 50 000 ₽</div>
+        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+      </div>
 
-<div class="card">
-  <h3 data-key="hajj-plus">Стандарт Плюс</h3>
-  <div class="city" data-key="city">Город: Москва</div>
-  <div>29 мая – 11 июня 2026 г.</div>
-  <div class="details">
-    <p><strong>Питание:</strong> Полупансион (завтрак + ужин)</p>
-    <p><strong>Гостиница:</strong> 4 звезды</p>
-    <p><strong>До мечети Аль-Харам:</strong> 1,5 км</p>
-  </div>
-  <div class="price" data-key="hajj-plus-price">ОТ 100 000 ₽</div>
-  <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-</div>
+      <div class="card">
+        <h3 data-key="hajj-plus">Стандарт Плюс</h3>
+        <div class="city" data-key="city">Город: Москва</div>
+        <div>29 мая – 11 июня 2026 г.</div>
+        <div class="details">
+          <p><strong>Питание:</strong> Полупансион (завтрак + ужин)</p>
+          <p><strong>Гостиница:</strong> 4 звезды</p>
+          <p><strong>До мечети Аль-Харам:</strong> 1,5 км</p>
+        </div>
+        <div class="price" data-key="hajj-plus-price">ОТ 100 000 ₽</div>
+        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+      </div>
 
-<div class="card">
-  <h3 data-key="hajj-premium">Премиум</h3>
-  <div class="city" data-key="city">Город: Москва</div>
-  <div>29 мая – 11 июня 2026 г.</div>
-  <div class="details">
-    <p><strong>Питание:</strong> Полный пансион (трёхразовое)</p>
-    <p><strong>Гостиница:</strong> 5 звезд</p>
-    <p><strong>До мечети Аль-Харам:</strong> 1-я линия (вид на мечеть)</p>
-  </div>
-  <div class="price" data-key="hajj-premium-price">ОТ 150 000 ₽</div>
-  <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-</div>
+      <div class="card">
+        <h3 data-key="hajj-premium">Премиум</h3>
+        <div class="city" data-key="city">Город: Москва</div>
+        <div>29 мая – 11 июня 2026 г.</div>
+        <div class="details">
+          <p><strong>Питание:</strong> Полный пансион (трёхразовое)</p>
+          <p><strong>Гостиница:</strong> 5 звезд</p>
+          <p><strong>До мечети Аль-Харам:</strong> 1-я линия (вид на мечеть)</p>
+        </div>
+        <div class="price" data-key="hajj-premium-price">ОТ 150 000 ₽</div>
+        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+      </div>
+    </div>
   </section>
 
   <section id="umrah">
-    <div class="card">
-  <h3 data-key="umrah-standard">Стандарт</h3>
-  <div class="city" data-key="city">Город: Москва</div>
-  <div>10 – 23 февраля 2026 г.</div>
-  <div class="details">
-    <p><strong>Питание:</strong> Завтраки</p>
-    <p><strong>Гостиница:</strong> 3 звезды</p>
-    <p><strong>До мечети Аль-Харам:</strong> 3 км</p>
-  </div>
-  <div class="price" data-key="umrah-standard-price">ОТ 25 000 ₽</div>
-  <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-</div>
+    <h2 data-key="section-umrah">Умра</h2>
+    <div class="cards">
+      <div class="card">
+        <h3 data-key="umrah-standard">Стандарт</h3>
+        <div class="city" data-key="city">Город: Москва</div>
+        <div>10 – 23 февраля 2026 г.</div>
+        <div class="details">
+          <p><strong>Питание:</strong> Завтраки</p>
+          <p><strong>Гостиница:</strong> 3 звезды</p>
+          <p><strong>До мечети Аль-Харам:</strong> 3 км</p>
+        </div>
+        <div class="price" data-key="umrah-standard-price">ОТ 25 000 ₽</div>
+        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+      </div>
 
-<div class="card">
-  <h3 data-key="umrah-plus">Стандарт Плюс</h3>
-  <div class="city" data-key="city">Город: Москва</div>
-  <div>15 – 28 марта 2026 г.</div>
-  <div class="details">
-    <p><strong>Питание:</strong> Полупансион (завтрак + ужин)</p>
-    <p><strong>Гостиница:</strong> 4 звезды</p>
-    <p><strong>До мечети Аль-Харам:</strong> 1,5 км</p>
-  </div>
-  <div class="price" data-key="umrah-plus-price">ОТ 50 000 ₽</div>
-  <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-</div>
+      <div class="card">
+        <h3 data-key="umrah-plus">Стандарт Плюс</h3>
+        <div class="city" data-key="city">Город: Москва</div>
+        <div>15 – 28 марта 2026 г.</div>
+        <div class="details">
+          <p><strong>Питание:</strong> Полупансион (завтрак + ужин)</p>
+          <p><strong>Гостиница:</strong> 4 звезды</p>
+          <p><strong>До мечети Аль-Харам:</strong> 1,5 км</p>
+        </div>
+        <div class="price" data-key="umrah-plus-price">ОТ 50 000 ₽</div>
+        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+      </div>
 
-<div class="card">
-  <h3 data-key="umrah-premium">Премиум</h3>
-  <div class="city" data-key="city">Город: Москва</div>
-  <div>20 июня – 3 июля 2026 г.</div>
-  <div class="details">
-    <p><strong>Питание:</strong> Полный пансион (трёхразовое)</p>
-    <p><strong>Гостиница:</strong> 5 звезд</p>
-    <p><strong>До мечети Аль-Харам:</strong> 1-я линия (вид на мечеть)</p>
-  </div>
-  <div class="price" data-key="umrah-premium-price">ОТ 75 000 ₽</div>
-  <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
-</div>
+      <div class="card">
+        <h3 data-key="umrah-premium">Премиум</h3>
+        <div class="city" data-key="city">Город: Москва</div>
+        <div>20 июня – 3 июля 2026 г.</div>
+        <div class="details">
+          <p><strong>Питание:</strong> Полный пансион (трёхразовое)</p>
+          <p><strong>Гостиница:</strong> 5 звезд</p>
+          <p><strong>До мечети Аль-Харам:</strong> 1-я линия (вид на мечеть)</p>
+        </div>
+        <div class="price" data-key="umrah-premium-price">ОТ 75 000 ₽</div>
+        <a href="#form-section" class="btn" data-key="btn-submit">Оставить заявку</a>
+      </div>
+    </div>
   </section>
 
   <section id="form-section">
     <h2 data-key="form-title">Оставить заявку</h2>
 
     <form id="lead-form">
-      <input type="text"   name="firstName"  placeholder="Имя"        data-ph="Имя / First name"        required>
-      <input type="text"   name="lastName"   placeholder="Фамилия"     data-ph="Фамилия / Last name"     required>
-      <input type="email"  name="email"      placeholder="Email"       data-ph="Email"                   required>
-      <input type="tel"    name="phone"      placeholder="Телефон"     data-ph="Телефон / Phone"         required>
+      <input type="text" name="firstName" placeholder="Имя" data-ph="Имя / First name" required>
+      <input type="text" name="lastName" placeholder="Фамилия" data-ph="Фамилия / Last name" required>
+      <input type="email" name="email" placeholder="Email" data-ph="Email" required>
+      <input type="tel" name="phone" placeholder="Телефон" data-ph="Телефон / Phone" required>
 
       <div class="agreement" data-key="agreement">
         Нажимая кнопку «Отправить», я соглашаюсь с обработкой персональных данных.
@@ -470,7 +454,7 @@
 
 </main>
 
-<!-- Модальное окно с полной офертой -->
+<!-- Модальное окно -->
 <div id="offer-modal" class="modal">
   <div class="modal-content">
     <span class="close">×</span>
@@ -480,35 +464,11 @@
       <p><strong>ПУБЛИЧНАЯ ОФЕРТА</strong></p>
       <p>Настоящий документ является публичной офертой компании DigiKey Limited (Unit 1202, 12/F., 299QRC,287-299 Queen’s Road Central,Hong Kong) (далее — «Компания») и определяет условия оказания агентских услуг по организации поездок для совершения Хаджа и Умры.</p>
       <ol>
-        <li><strong>Предмет оферты</strong><br>
-          Компания оказывает агентские и информационные услуги, направленные на организацию поездок для совершения Хаджа и Умры, включая, но не ограничиваясь:<br>
-          · подбором и координацией туристических, транспортных и сопутствующих услуг;<br>
-          · взаимодействием с третьими лицами (авиаперевозчики, отели, туроператоры, визовые центры и иные поставщики услуг);<br>
-          · информационным сопровождением клиента.<br>
-          Компания не является туроператором, перевозчиком, гостиницей, визовым органом или религиозной организацией.
-        </li>
-        <li><strong>Агентский статус</strong><br>
-          Компания действует исключительно в качестве агента и не оказывает услуги по перевозке, размещению, питанию, визовой поддержке, медицинскому обслуживанию либо проведению религиозных обрядов напрямую.<br>
-          Все указанные услуги предоставляются третьими лицами, которые несут самостоятельную ответственность за их качество, сроки и исполнение.
-        </li>
-        <li><strong>Ограничение ответственности</strong><br>
-          Компания не несёт ответственности за:<br>
-          · отмену, перенос или изменение условий услуг, предоставляемых третьими лицами;<br>
-          · действия или бездействие авиакомпаний, отелей, туроператоров, государственных и религиозных органов;<br>
-          · отказ в выдаче виз, въезде в страну или допуске к религиозным мероприятиям;<br>
-          · форс-мажорные обстоятельства, включая эпидемии, изменения законодательства, решения властей, погодные условия, забастовки и иные события вне контроля Компании.<br>
-          Ответственность Компании в любом случае ограничивается размером агентского вознаграждения, фактически уплаченного Клиентом Компании.
-        </li>
-        <li><strong>Обязанности клиента</strong><br>
-          Клиент самостоятельно несёт ответственность за:<br>
-          · достоверность предоставляемых документов и персональных данных;<br>
-          · соблюдение требований законодательства, религиозных норм и правил страны пребывания;<br>
-          · состояние своего здоровья и наличие необходимых разрешений для поездки.
-        </li>
-        <li><strong>Применимое право</strong><br>
-          DigiKey Limited зарегистрирована и осуществляет деятельность в соответствии с законодательством Гонконга.<br>
-          Все отношения сторон регулируются правом Гонконга, если иное не установлено императивными нормами применимого права.
-        </li>
+        <li><strong>Предмет оферты</strong><br>Компания оказывает агентские и информационные услуги, направленные на организацию поездок для совершения Хаджа и Умры, включая, но не ограничиваясь:<br>· подбором и координацией туристических, транспортных и сопутствующих услуг;<br>· взаимодействием с третьими лицами (авиаперевозчики, отели, туроператоры, визовые центры и иные поставщики услуг);<br>· информационным сопровождением клиента.<br>Компания не является туроператором, перевозчиком, гостиницей, визовым органом или религиозной организацией.</li>
+        <li><strong>Агентский статус</strong><br>Компания действует исключительно в качестве агента и не оказывает услуги по перевозке, размещению, питанию, визовой поддержке, медицинскому обслуживанию либо проведению религиозных обрядов напрямую.<br>Все указанные услуги предоставляются третьими лицами, которые несут самостоятельную ответственность за их качество, сроки и исполнение.</li>
+        <li><strong>Ограничение ответственности</strong><br>Компания не несёт ответственности за:<br>· отмену, перенос или изменение условий услуг, предоставляемых третьими лицами;<br>· действия или бездействие авиакомпаний, отелей, туроператоров, государственных и религиозных органов;<br>· отказ в выдаче виз, въезде в страну или допуске к религиозным мероприятиям;<br>· форс-мажорные обстоятельства, включая эпидемии, изменения законодательства, решения властей, погодные условия, забастовки и иные события вне контроля Компании.<br>Ответственность Компании в любом случае ограничивается размером агентского вознаграждения, фактически уплаченного Клиентом Компании.</li>
+        <li><strong>Обязанности клиента</strong><br>Клиент самостоятельно несёт ответственность за:<br>· достоверность предоставляемых документов и персональных данных;<br>· соблюдение требований законодательства, религиозных норм и правил страны пребывания;<br>· состояние своего здоровья и наличие необходимых разрешений для поездки.</li>
+        <li><strong>Применимое право</strong><br>DigiKey Limited зарегистрирована и осуществляет деятельность в соответствии с законодательством Гонконга.<br>Все отношения сторон регулируются правом Гонконга, если иное не установлено императивными нормами применимого права.</li>
       </ol>
       <p><strong>Размещение заявки или оплата услуг означает полное и безоговорочное принятие условий настоящей оферты.</strong></p>
     </div>
@@ -517,35 +477,11 @@
       <p><strong>PUBLIC OFFER</strong></p>
       <p>This document constitutes a public offer of DigiKey Limited (Unit 1202, 12/F., 299QRC,287-299 Queen’s Road Central,Hong Kong)(the “Company”) and defines the terms for providing agency services related to the organization of travel for Hajj and Umrah.</p>
       <ol>
-        <li><strong>Scope of Services</strong><br>
-          The Company provides agency and informational services related to the organization of travel for Hajj and Umrah, including but not limited to:<br>
-          · coordination and arrangement of travel-related services;<br>
-          · interaction with third-party service providers (airlines, hotels, tour operators, visa centers, and other suppliers);<br>
-          · informational and administrative support.<br>
-          The Company does not act as a tour operator, carrier, accommodation provider, visa authority, or religious institution.
-        </li>
-        <li><strong>Agency Role</strong><br>
-          The Company acts solely as an agent and does not directly provide transportation, accommodation, catering, visa issuance, medical services, or religious guidance.<br>
-          All such services are rendered by independent third parties, which bear full responsibility for their performance and quality.
-        </li>
-        <li><strong>Limitation of Liability</strong><br>
-          The Company shall not be liable for:<br>
-          · cancellation, modification, or failure of services provided by third parties;<br>
-          · acts or omissions of airlines, hotels, tour operators, governmental or religious authorities;<br>
-          · visa refusal, denial of entry, or restrictions on participation in religious activities;<br>
-          · force majeure events, including but not limited to epidemics, changes in laws, government decisions, weather conditions, strikes, or other circumstances beyond the Company’s control.<br>
-          In any event, the Company’s total liability shall be limited to the amount of the agency fee actually paid by the Client to the Company.
-        </li>
-        <li><strong>Client Responsibilities</strong><br>
-          The Client is solely responsible for:<br>
-          · accuracy and completeness of provided documents and personal data;<br>
-          · compliance with applicable laws, religious rules, and regulations of the destination country;<br>
-          · personal health condition and eligibility for travel.
-        </li>
-        <li><strong>Governing Law</strong><br>
-          DigiKey Limited is incorporated and operates under the laws of Hong Kong.<br>
-          These terms shall be governed by and construed in accordance with the laws of Hong Kong, unless mandatory provisions of applicable law provide otherwise.
-        </li>
+        <li><strong>Scope of Services</strong><br>The Company provides agency and informational services related to the organization of travel for Hajj and Umrah, including but not limited to:<br>· coordination and arrangement of travel-related services;<br>· interaction with third-party service providers (airlines, hotels, tour operators, visa centers, and other suppliers);<br>· informational and administrative support.<br>The Company does not act as a tour operator, carrier, accommodation provider, visa authority, or religious institution.</li>
+        <li><strong>Agency Role</strong><br>The Company acts solely as an agent and does not directly provide transportation, accommodation, catering, visa issuance, medical services, or religious guidance.<br>All such services are rendered by independent third parties, which bear full responsibility for their performance and quality.</li>
+        <li><strong>Limitation of Liability</strong><br>The Company shall not be liable for:<br>· cancellation, modification, or failure of services provided by third parties;<br>· acts or omissions of airlines, hotels, tour operators, governmental or religious authorities;<br>· visa refusal, denial of entry, or restrictions on participation in religious activities;<br>· force majeure events, including but not limited to epidemics, changes in laws, government decisions, weather conditions, strikes, or other circumstances beyond the Company’s control.<br>In any event, the Company’s total liability shall be limited to the amount of the agency fee actually paid by the Client to the Company.</li>
+        <li><strong>Client Responsibilities</strong><br>The Client is solely responsible for:<br>· accuracy and completeness of provided documents and personal data;<br>· compliance with applicable laws, religious rules, and regulations of the destination country;<br>· personal health condition and eligibility for travel.</li>
+        <li><strong>Governing Law</strong><br>DigiKey Limited is incorporated and operates under the laws of Hong Kong.<br>These terms shall be governed by and construed in accordance with the laws of Hong Kong, unless mandatory provisions of applicable law provide otherwise.</li>
       </ol>
       <p><strong>Submission of a request or payment for services constitutes full and unconditional acceptance of this public offer.</strong></p>
     </div>
@@ -553,7 +489,7 @@
 </div>
 
 <script>
-// Переводы
+// Переводы (без изменений)
 const translations = {
   ru: {
     "logo": "Агент по Хаджу и Умре",
@@ -623,9 +559,7 @@ function setLanguage(lang) {
 
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.dataset.key;
-    if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
-    }
+    if (translations[lang][key]) el.textContent = translations[lang][key];
   });
 
   document.querySelectorAll('input[data-ph]').forEach(inp => {
@@ -647,25 +581,16 @@ document.querySelectorAll('.lang-switch button').forEach(btn => {
 
 setLanguage('ru');
 
-// Модалка
+// Модальное окно
 const modal = document.getElementById('offer-modal');
 const openBtn = document.getElementById('open-offer');
 const closeBtn = document.querySelector('.close');
 
-openBtn.addEventListener('click', e => {
-  e.preventDefault();
-  modal.style.display = 'flex';
-});
+openBtn.addEventListener('click', e => { e.preventDefault(); modal.style.display = 'flex'; });
+closeBtn.addEventListener('click', () => modal.style.display = 'none');
+modal.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
 
-closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-modal.addEventListener('click', e => {
-  if (e.target === modal) modal.style.display = 'none';
-});
-
-// Форма (имитация отправки)
+// Имитация отправки формы
 document.getElementById('lead-form').addEventListener('submit', e => {
   e.preventDefault();
   const form = e.target;
